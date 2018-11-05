@@ -1,10 +1,9 @@
 ﻿
-
 .control-label.text-lowercase{
  text-transform: none;
 }
 .form-group p{
-	text-align: justify;
+  text-align: justify;
 }
 .control-label {
 
@@ -12,7 +11,7 @@
   font-weight: bold;
     font-size: 1.2em;
     margin-bottom: 3px !important;
-	text-align: left !important;
+  text-align: left !important;
 }
 
 label.radio {
@@ -164,7 +163,7 @@ span.req {
 }
 
 /*.ps-col {
-	padding: 4px; 
+  padding: 4px; 
 }*/
 
 .row {
@@ -335,13 +334,13 @@ span.error > ul {
 
 
 /* Step2 */
-.radiostep2[type="checkbox"]:checked,
-.radiostep2[type="checkbox"]:not(:checked) {
+.radiostep2[type="radio"]:checked,
+.radiostep2[type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
-.radiostep2[type="checkbox"]:checked + label,
-.radiostep2[type="checkbox"]:not(:checked) + label
+.radiostep2[type="radio"]:checked + label,
+.radiostep2[type="radio"]:not(:checked) + label
 {
     position: relative;
     cursor: pointer;
@@ -354,8 +353,8 @@ span.error > ul {
     font-size: 20px;
     margin-bottom: 50px;
 }
-.radiostep2[type="checkbox"]:checked + label:before,
-.radiostep2[type="checkbox"]:not(:checked) + label:before {
+.radiostep2[type="radio"]:checked + label:before,
+.radiostep2[type="radio"]:not(:checked) + label:before {
     content: '';
     position: absolute;
     left: 0;
@@ -367,8 +366,8 @@ span.error > ul {
     background: #ffb6bb59;
     box-shadow: 5px 5px 15px -7px #00000073;
 }
-.radiostep2[type="checkbox"]:checked + label:after,
-.radiostep2[type="checkbox"]:not(:checked) + label:after {
+.radiostep2[type="radio"]:checked + label:after,
+.radiostep2[type="radio"]:not(:checked) + label:after {
     content: '';
     width: 250px;
     height: 100px;
@@ -381,14 +380,13 @@ span.error > ul {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.radiostep2[type="checkbox"]:not(:checked) + label:after {
+.radiostep2[type="radio"]:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
-.radiostep2[type="checkbox"]:checked + label:after {
+.radiostep2[type="radio"]:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);
     transform: scale(1);
 }
-
