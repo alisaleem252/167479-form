@@ -1,0 +1,394 @@
+﻿
+
+.control-label.text-lowercase{
+ text-transform: none;
+}
+.form-group p{
+	text-align: justify;
+}
+.control-label {
+
+  text-transform: uppercase;
+  font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 3px !important;
+	text-align: left !important;
+}
+
+label.radio {
+    line-height: 2.4;
+}
+
+.radio.radiolarge input[type=radio] {
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
+  border:1px solid #000;
+  border-top-color:#000;
+  border-left-color:#000;
+  background:#fff;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  margin-right: 8px;
+}
+.radiolarge input[type=radio]:checked{
+  border:10px solid #4099ff;
+}
+.healthformbtn {
+  background: #f71100 !important;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    border-radius: 1px;
+}
+.radio input[type=radio] {
+  -webkit-appearance:button;
+  -moz-appearance:button;
+  appearance:button;
+  border:1px solid #000;
+  border-top-color:#000;
+  border-left-color:#000;
+  background:#fff;
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  margin-right: 6px;
+}
+.radio input[type=radio]:checked{
+  border:5px solid #4099ff;
+}
+
+input[type=radio]:focus{
+  outline:none;
+}
+
+
+.healthform {
+    max-width: 1000px;
+    /*background-color: #f5f5f5;*/
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;  
+}
+.form-control {
+    border-radius: 1px;
+    border: 1px solid black;
+    height: 40px;
+}
+.healthform h1{
+  text-transform: uppercase;
+
+  margin: 60px;
+}
+.healthform h1::after {
+    border-bottom: 4px solid #f71100;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30%;
+    left: 35%;
+    margin-top: 20px;
+}
+
+
+
+.viewdoc {
+  position: relative;
+  margin: 25px;
+  padding: 15px 10px;
+  background-color: #fff;
+}
+
+.viewerror {
+  position: relative;
+  margin: 5px;
+  
+ 
+}
+
+.hoverComponent {
+    border: 1px solid #ddd !important;
+    background-color: rgba(3, 14, 27, 0.03);
+}
+
+.shadow {
+/*-moz-box-shadow: 0 0 10px 5px #999;
+-webkit-box-shadow: 0 0 10px 5px #999;*/
+-webkit-box-shadow:1px 1px 16px grey;
+-moz-box-shadow:1px 1px 16px grey;
+box-shadow: 1px 1px 16px grey;
+border: #ddd solid 1px;
+margin: 20px;
+background-color: #ffffff;
+padding: 20px;
+}
+
+
+    .brdbot {
+    border-color: #f5f5f5;
+    border-bottom: 1px solid #ddd !important;
+}
+
+
+
+.brand {
+    margin-left: 5px;
+    margin-top:5px; 
+    margin-right: 5px;}
+
+
+
+
+
+
+
+
+
+
+.form-horizontal .control-label-left{
+text-align:left;
+}
+
+
+span.req {
+    display: inline;
+    float: none;
+    color: red !important;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+/*.ps-col {
+	padding: 4px; 
+}*/
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.form-horizontal .form-group {
+ margin-left: 0px;
+ margin-right: 0px;
+}
+
+span.error {
+    color: red;
+    
+}
+
+span.error > ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+
+.k-autocomplete, .k-combobox, .k-datepicker, .k-timepicker, .k-datetimepicker, .k-colorpicker, .k-numerictextbox, .k-dropdown, .k-selectbox, .k-textbox {
+   width: 100%;
+}
+
+.k-header {
+    background-color: transparent !important;
+}
+
+.k-widget {
+    padding:0px;
+}
+
+
+
+
+
+
+
+
+
+/*ng animate CSS*/
+
+.animate-switch-container {
+/*  position:relative;
+  overflow: hidden;
+  border: solid 1px black;
+  box-shadow: 6px 6px 15px gray;
+  padding:10px;
+  border-radius:10px;
+  background-size: 50px 50px;*/
+}
+.animate-switch{
+/*  padding:10px;*/
+  width: 100%;
+}
+.animate-switch.ng-animate {
+  -webkit-transition:all 0.5s;
+  transition:all 0.5s;
+  position:absolute;
+
+}
+/* hide leaving slide  */
+/* show */
+.animate-switch.ng-leave{
+  left:0;
+}
+/* hide */
+.forward .animate-switch.ng-leave.ng-leave-active{
+  left:-100%;
+}
+.backward .animate-switch.ng-leave.ng-leave-active{
+  left: 100%;
+}
+/* show entering slide  */
+/* hide */
+.forward .animate-switch.ng-enter {
+  left:100%;
+}
+.backward .animate-switch.ng-enter {
+  left:-100%;
+}
+/* show */
+.animate-switch.ng-enter.ng-enter-active {
+  left:0;
+}
+
+
+/*-----------------------------------*/
+/*------>>> Validation <<<-----------*/
+/*-----------------------------------*/
+
+.form-validation input.ng-invalid-maxlength {
+  border:2px solid #D9272D;
+}
+
+
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none;
+}
+
+
+/*------>>> Animations <<<-----*/
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -o-transition: opacity 0.25s ease-in;
+  -ms-transition: opacity 0.25s ease-in;
+  transition: opacity 0.25s ease-in;
+  transition-delay: 0.25s;
+}
+.fade.in{
+  opacity: 1;
+}
+
+
+.length-error {
+  color: #D9272D;
+  display: block;
+  font-size: 12px;
+  opacity: .8;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  line-height: 18px;
+  padding: 10px 10px 5px 10px;
+  margin: -25px 0 20px 0;
+  background-color: #E3E3E3;
+  border-radius: 0 0 5px 5px;
+}
+
+.input-error {
+  border: 2px solid #D9272D;
+}
+
+/*-----------------------------------*/
+/*------->>> FORM STYLES <<<---------*/
+/*-----------------------------------*/
+
+.note {
+  display: block;
+  font-size: 12px;
+  opacity: .8;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  line-height: 18px;
+}
+
+.note-input {
+  padding: 10px 10px 5px 10px;
+  margin: -25px 0 20px 0;
+  background-color: #E3E3E3;
+  border-radius: 0 0 5px 5px;
+}
+
+.note-input-error, .required-error-banner {
+  background-color: rgba(217, 39, 45, 0.5);
+}
+
+
+
+
+/* Step2 */
+.radiostep2[type="checkbox"]:checked,
+.radiostep2[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.radiostep2[type="checkbox"]:checked + label,
+.radiostep2[type="checkbox"]:not(:checked) + label
+{
+    position: relative;
+    cursor: pointer;
+    line-height: 100px;
+    text-align: center;
+    display: inline-block;
+    color: #000;
+    width: 250px;
+    height: 100px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.radiostep2[type="checkbox"]:checked + label:before,
+.radiostep2[type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #ffb6bb59;
+    box-shadow: 5px 5px 15px -7px #00000073;
+}
+.radiostep2[type="checkbox"]:checked + label:after,
+.radiostep2[type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 250px;
+    height: 100px;
+    background: #ffb6bb59;
+    border:1px solid gray;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 2px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.radiostep2[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.radiostep2[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
