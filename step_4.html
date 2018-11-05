@@ -1,0 +1,221 @@
+<div class="animate-switch" ng-switch-when="step4">
+	<div class="row">
+		<div class="col-md-12"><h1 class="text-center">Important Part</h1></div>		
+			<div class="row">
+				<div class="col-md-5">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">Social Security Number<span class="req"> *
+										</span>
+							 </label>
+							 <div class="controls">
+								<input ng-model="healthcare.step4.SocialSecurityNum" ng-required="true" name="SocialSecurityNum" type="text" class="form-control k-textbox" data-role="text"><span class="error" ng-show="formValidation && multiStepForm.SocialSecurityNum.$error.required">Social Security Number is required</span>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-5  col-md-offset-2">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">Date of Birth<span class="req"> *
+										</span>
+							 </label>
+							 <div class="controls">
+								<input ng-model="healthcare.step4.datebirth" ng-required="true" name="datebirth" type="text" class="form-control k-textbox" data-role="text" ><span class="error" ng-show="formValidation && multiStepForm.datebirth.$error.required">Date of Birth is required</span>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-12">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">Home Address<span class="req"> *
+										</span>
+							 </label>
+							 <div class="controls">
+								<input ng-model="healthcare.step4.HomeAddress" ng-required="true" name="HomeAddress" type="text" class="form-control k-textbox" data-role="text" ><span class="error" ng-show="formValidation && multiStepForm.HomeAddress.$error.required">Home Address is required</span>
+							</div>
+						</div>
+				</div>
+
+				<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label text-lowercase">Are you licensed/certified for the job applied for?<span class="req"> *
+										</span> 
+							</label>
+							<div class="controls">
+								<label class="radio col-md-2"><input ng-required="true" ng-model="healthcare.step4.licenseCert" name="licenseCert"  type="radio" value="Yes">Yes
+								</label><label class="radio col-md-2"><input ng-required="true" ng-model="healthcare.step4.licenseCert" name="licenseCert" type="radio" value="No" >No
+								</label>
+							</div>
+						</div>
+					<div class="col-md-12">
+						<span class="error" ng-show="formValidation && multiStepForm.licenseCert.$error.required">Licensed/Certified   is required</span>
+					</div>
+
+				</div>
+			<div class="row">	
+				<div class="col-md-6">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">Name of License/Certification<span class="req"> *
+										</span>
+							 </label>
+							 <div class="controls">
+								<input ng-model="healthcare.step4.nameLicenseCert" ng-required="true" name="nameLicenseCert" type="text" class="form-control k-textbox" data-role="text" ><span class="error" ng-show="formValidation && multiStepForm.nameLicenseCert.$error.required">Name of License/Certification is required</span>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">Issuing State/Nation <span class="req"> *
+										</span>
+							 </label>
+							 <div class="controls">
+								<input ng-model="healthcare.step4.issueingNation" ng-required="true" name="issueingNation" type="text" class="form-control k-textbox" data-role="text" ><span class="error" ng-show="formValidation && multiStepForm.issueingNation.$error.required">Issuing State/Nation is required</span>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">License/Certification Number<span class="req"> *
+										</span> 
+							 </label>
+							 <div class="controls">
+								<input ng-model="healthcare.step4.licenseCertNum" ng-required="true" name="licenseCertNum" type="text" class="form-control k-textbox" data-role="text" ><span class="error" ng-show="formValidation && multiStepForm.licenseCertNum.$error.required">License/Certification Number is required</span>
+							</div>
+						</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+			<div class="row" ng-show="healthcare.step4.anotherLicenseCert">	
+				<div class="col-md-6">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">Name of License/Certification<span class="req"> *
+										</span>
+							 </label>
+							 <div class="controls">
+								<input ng-required="healthcare.step4.anotherLicenseCert" ng-model="healthcare.step4.nameLicenseCertAnother" name="nameLicenseCertAnother" type="text" class="form-control k-textbox" data-role="text" ><span class="error" ng-show="formValidation && multiStepForm.nameLicenseCertAnother.$error.required">Name of License/Certification is required</span>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">Issuing State/Nation <span class="req"> *
+										</span>
+							 </label>
+							 <div class="controls">
+								<input ng-required="healthcare.step4.anotherLicenseCert" ng-model="healthcare.step4.issueingNationAnother" name="issueingNationAnother" type="text" class="form-control k-textbox" data-role="text" ><span class="error" ng-show="formValidation && multiStepForm.issueingNationAnother.$error.required">Issuing State/Nation is required</span>
+							</div>
+						</div>
+				</div>
+				<div class="col-md-3">
+						<div class="form-group">
+							 <label class="control-label text-lowercase">License/Certification Number<span class="req"> *
+										</span> 
+							 </label>
+							 <div class="controls">
+								<input ng-required="healthcare.step4.anotherLicenseCert" ng-model="healthcare.step4.licenseCertNumAnother" name="licenseCertNumAnother" type="text" class="form-control k-textbox" data-role="text" ><span class="error" ng-show="formValidation && multiStepForm.licenseCertNumAnother.$error.required">License/Certification Number is required</span>
+							</div>
+						</div>
+				</div>
+			</div>
+
+
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<div class="controls">
+									<label class="checkbox"><input ng-model="healthcare.step4.anotherLicenseCert" name="anotherLicenseCert" type="checkbox" value="Yes"> &nbsp;Add another License/Certification
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label text-lowercase">Has your License/Certification ever been revoked or suspended? <span class="req"> *
+										</span>
+								</label>
+								<div class="controls">
+									<label class="radio col-md-2"><input ng-required="true" ng-model="healthcare.step4.licenseCertSusp" name="licenseCertSusp"  type="radio" value="Yes">Yes
+									</label><label class="radio col-md-2"><input ng-required="true" ng-model="healthcare.step4.licenseCertSusp" name="licenseCertSusp" type="radio" value="No" >No
+									</label>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<span class="error" ng-show="formValidation && multiStepForm.licenseCertSusp.$error.required">Licensed/Certified Suspension is required</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label text-lowercase">Have you ever been subjected to disciplinary action? <span class="req"> *
+										</span>
+								</label>
+								<div class="controls">
+									<label class="radio col-md-2"><input ng-required="true" ng-model="healthcare.step4.disciplinaryAction" name="disciplinaryAction"  type="radio" value="Yes">Yes
+									</label><label class="radio col-md-2"><input ng-required="true" ng-model="healthcare.step4.disciplinaryAction" name="disciplinaryAction" type="radio" value="No" >No
+									</label>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<span class="error" ng-show="formValidation && multiStepForm.disciplinaryAction.$error.required">The disciplinary action field is required</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label text-lowercase">Please list any additional certifications not already specified above? 
+								</label>
+								<div class="controls">
+									<textarea ng-model="healthcare.step4.additionalCert" name="additionalCert"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<span class="error" ng-show="formValidation && multiStepForm.additionalCert.$error.required">The disciplinary action field is required</span>
+							</div>
+						</div>
+					</div>
+
+				<div class="col-md-12">
+						<div class="form-group">
+							
+							<div class="controls">
+								<label class="radio col-md-3" id="dropboxlabel">Upload Resume</label>
+									<button id="dropBox" class="btn btn-default">Browse</button>
+									<input id="fileInput" class="hidden" name="resumefile" type="file" />
+									<input id="fileUrl" ng-model="healthcare.resume" name="resume" type="hidden" />
+							</div>
+						</div>
+					<div class="col-md-12">
+						<span class="error" ng-show="formValidation && multiStepForm.resume.$error.required">Resume is required</span>
+					</div>
+
+				</div>
+			</div><!-- Row after heading -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<button ng-click="next('step5')" type="submit" class="btn btn-default btn-block healthformbtn">Next
+							</button>
+						</div>
+
+					</div>
+					
+				</div>
+				
+		</div><!--Row wrapper -->
+		
+</div><!-- Div Switch Row -->
+{{healthcare}}
